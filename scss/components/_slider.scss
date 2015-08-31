@@ -1,3 +1,78 @@
 .slider{
-  height: 408px;
+  /*height: 408px;*/
+  .slide{
+    margin-top: -14px;
+    /*height: 100%;*/
+    .description{
+      padding-left: 1em;
+      padding-top: 50px;
+      @include span-columns(4);
+      @include shift(7);
+      @include omega();
+      h2{
+        font-size: 30px;
+        margin-bottom: -4px;
+        strong{
+          @include font-bold; 
+        }
+        .line2{
+          font-size: 70.35px;
+          text-transform: uppercase;
+          margin-bottom: -10px;
+          @include font-bold;
+        }
+        .line3{
+          font-size: 45px;
+        }
+      }
+      p{
+        margin: 0;
+        white-space: nowrap;
+      }
+    }
+  }
 }
+
+.slider-wrapper{
+  position: relative;
+  margin-bottom: 38px;
+  .slider-goToPrevSlide, .slider-goToNextSlide {
+    position: absolute;
+    width: 39px;
+    left: -2px;
+    top: 62%;
+    height: 77px;
+    margin-top: -98px;
+    background: url(../../assets/img/slider-prev.png) no-repeat;
+    cursor: pointer;
+    @include transition( all $duration );
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+  .slider-goToNextSlide{
+    background-image: url(../../assets/img/slider-next.png);
+    left: auto;
+    right: -2px;
+  }
+  .lSSlideOuter .lSPager{
+    float: right;
+    &.lSpg{
+      margin-top: -10px !important; /*overriding plugin inline css*/
+      &> li{
+        padding: 0 3px;
+        a{
+          width:  13px;
+          height: 13px;
+          background: $color-white;
+          border: 1px solid silver;
+        }
+        &.active a, &:hover a{
+          background: $color-yellow;
+          border-color: $color-yellow;
+        }
+      }
+    }
+  }
+}
+

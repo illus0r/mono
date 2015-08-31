@@ -30,7 +30,7 @@ nav{
         padding: 0.2em 0.7em;
         margin: 0;/* $active-margin;*/
         border: 3px solid transparent;
-        @include transition( all 0.1s ease );
+        @include transition( all $duration );
         &.active, &:hover{
           border-color: $color-yellow;
         }

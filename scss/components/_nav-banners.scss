@@ -3,7 +3,7 @@
   .nav-banner{
     position: relative;
     display: inline-block;
-    @include span-columns(10 of 30);
+    @include span-columns(6 of 18);
     @include omega(3n);
     img{
       display: inline-block;
@@ -23,7 +23,7 @@
       font-size: 40px;
       text-transform: uppercase;
       vertical-align: bottom;
-      @include transition( all 0.1s ease );
+      @include transition( all $duration );
     }
     &:hover .overlay{
       background: $color-yellow * 10%;

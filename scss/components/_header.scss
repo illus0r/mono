@@ -25,8 +25,12 @@ header{
       height: 34px;
     }
     .phone-number{
-      @include font-cond;
       font-size: 38px;
+      @include font-cond;
+      a{
+        color: $color-white;
+        text-decoration: none;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 body{
+  background: #ececec url(../../assets/img/bg.png) 0 0 repeat-y;
   @include font-normal;
 }
 
@@ -11,8 +12,9 @@ body{
       @include span-columns(6);
     }
     .column2{
-      margin-top: 2.5em;
+      margin-top: 3.05em;
       @include span-columns(6);
     }
   }
+
 }

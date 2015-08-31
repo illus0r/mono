@@ -1,25 +1,35 @@
 .carousel-wrapper{
   position: relative;
+  text-align: center;
+  margin-bottom: 16px;
   @include span-columns(20 of 22);
   @include shift(1);
-  .goToPrevSlide, .goToNextSlide {
+  .carousel-goToPrevSlide, .carousel-goToNextSlide {
     position: absolute;
     width: 24px;
     left: -50px;
-    top: 50%;
+    top: 62%;
     height: 48px;
     margin-top: -24px;
     background: url(../../assets/img/carousel-prev.png) no-repeat;
     cursor: pointer;
-    @include transition( all 0.1s );
+    @include transition( all $duration );
     &:hover{
       opacity: 0.6;
     }
   }
-  .goToNextSlide{
+  .carousel-goToNextSlide{
     background-image: url(../../assets/img/carousel-next.png);
     left: auto;
     right: -50px;
+  }
+  h2.clients{
+    margin: 16px 0 -20px;
+    background: $color-yellow;
+    font-size: 37px;
+    display: inline-block;
+    /*padding: 0.em 0.6em 0em;*/
+    padding: 0.1em 0.4em 0;
   }
 }
 

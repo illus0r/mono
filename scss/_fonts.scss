@@ -24,20 +24,33 @@
   font-family: PFDinTextBold, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body{
+  color: $color-text-black;
+}
+
 
 a{
   color: $color-link;
+  @include transition( all $duration );
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+h1, h2{
+  font-weight: normal;
+  @include font-normal;
+  strong{
+    font-weight: normal;
+    @include font-bold;
+  }
 }
 
 h1{
   font-size: 30px;
-  font-weight: normal;
   margin-bottom: 0;
-  @include font-normal;
   strong{
     font-size: 36px;
-    font-weight: normal;
-    @include font-bold;
   }
 }
 
@@ -45,4 +58,9 @@ p{
     font-size: 16.5px;
     margin-top: 0.0em;
     line-height: 1.2em;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px dashed $color-text-black;
 }

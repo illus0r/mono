@@ -42,6 +42,9 @@ footer{
     @include font-cond;
     font-size: 27px;
     display: inline-block;
+    a{
+      text-decoration: none;
+    }
   }
   .email{
     margin-left: 0.5em;
