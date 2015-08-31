@@ -30,6 +30,7 @@ var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var neat = require('node-neat').includePaths;
 var browserSync = require('browser-sync').create();
+var minifycss = require('gulp-minify-css');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -48,6 +49,7 @@ gulp.task('sass', function() {
         .pipe(sass({
           includePaths: ['styles'].concat(neat)
         }))
+        .pipe(minifycss())
         .pipe(gulp.dest("assets/css"))
         .pipe(browserSync.stream());
 });

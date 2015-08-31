@@ -1,4 +1,5 @@
 body{
+  min-width: 960px;
   background: #ececec url(../../assets/img/bg.png) 0 0 repeat-y;
   @include font-normal;
 }
