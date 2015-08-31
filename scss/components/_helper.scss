@@ -1,0 +1,12 @@
+body:after{
+  content: '';
+  opacity: 0.2;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff url(../img/all.png) center 0 no-repeat;
+}
+

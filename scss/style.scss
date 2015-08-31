@@ -1,8 +1,15 @@
+@import "components/variables";
+
+/*libs*/
+@import "../bower_components/normalize-scss/_normalize.scss";
 @import "bourbon";
+@import "neat";
 
-html, body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
+/*pages*/
+@import "page";
 
+/*z*/
+@import "components/header";
+
+/*helpers*/
+@import "components/helper";

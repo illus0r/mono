@@ -1,0 +1,20 @@
+header{
+  height: 106px;
+  background: $color-header-gray;
+  .logo{
+    padding: 10px 0 0 6px;
+    @include span-columns(5);
+  }
+  .phone{
+    color: $color-white;
+    text-align: right;
+    @include span-columns(6);
+    @include omega();
+    .phone-icon{
+      background: url(../img/phone-icon.png) 0 0 no-repeat;
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
