@@ -1,11 +1,13 @@
 .slider{
-  /*height: 408px;*/
+  overflow: visible;
   .slide{
-    margin-top: -14px;
+    margin: 0;
+    /*padding-top: 14px;*/
+    height: 388px;
     /*height: 100%;*/
     .description{
       padding-left: 1em;
-      padding-top: 50px;
+      padding-top: 33px;
       @include span-columns(4);
       @include shift(7);
       @include omega();
@@ -35,12 +37,12 @@
 
 .slider-wrapper{
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: -10px;
   .slider-goToPrevSlide, .slider-goToNextSlide {
     position: absolute;
     width: 39px;
     left: -2px;
-    top: 62%;
+    top: 55%;
     height: 77px;
     margin-top: -98px;
     background: url(../../assets/img/slider-prev.png) no-repeat;
@@ -58,7 +60,7 @@
   .lSSlideOuter .lSPager{
     float: right;
     &.lSpg{
-      margin-top: -10px !important; /*overriding plugin inline css*/
+      margin-top: -60px !important; /*overriding plugin inline css*/
       &> li{
         padding: 0 3px;
         a{

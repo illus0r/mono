@@ -1,6 +1,7 @@
 body{
   min-width: 960px;
   background: #ececec url(../../assets/img/bg.png) 0 0 repeat-y;
+  /*background: #fff url(../img/all.png) center 0 no-repeat;*/
   @include font-normal;
 }
 
@@ -17,5 +18,4 @@ body{
       @include span-columns(6);
     }
   }
-
 }
