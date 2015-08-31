@@ -1,8 +1,11 @@
 header{
   height: 106px;
   background: $color-header-gray;
+  .header-inner{
+    @include outer-container;
+  }
   .logo{
-    padding: 10px 0 0 6px;
+    padding: 12px 0 0 9px;
     @include span-columns(5);
   }
   .phone{

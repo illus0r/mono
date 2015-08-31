@@ -397,21 +397,20 @@ body:before {
   z-index: -1; }
 
 /*pages*/
-body {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-  body::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 /*z*/
 header {
   height: 106px;
   background: #2d2d2d; }
+  header .header-inner {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    header .header-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
   header .logo {
-    padding: 6px 0 0 6px;
+    padding: 12px 0 0 9px;
     float: left;
     display: block;
     margin-right: 2.35765%;
