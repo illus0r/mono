@@ -1,0 +1,32 @@
+.nav-banners{
+  font-size: 0;
+  .nav-banner{
+    position: relative;
+    display: inline-block;
+    @include span-columns(10 of 30);
+    @include omega(3n);
+    img{
+      display: inline-block;
+      vertical-align: bottom;
+      width: 100%;
+    }
+    .overlay{
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $color-white;
+      opacity: 0.83;
+      text-align: center;
+      padding: 15px 0 5px;
+      font-size: 40px;
+      text-transform: uppercase;
+      vertical-align: bottom;
+      @include transition( all 0.1s ease );
+    }
+    &:hover .overlay{
+      background: $color-yellow * 10%;
+    }
+  }
+}

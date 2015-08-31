@@ -1,0 +1,48 @@
+@font-face {
+    font-family: PFDinText;
+    src: url(../fonts/PFDinTextCondPro-Light.ttf);
+}
+@font-face {
+    font-family: PFDinTextCond;
+    src: url(../fonts/PFDinTextCompPro-Light_0.ttf);
+    /*font-stretch: condensed;*/
+}
+@font-face {
+    font-family: PFDinTextBold;
+    src: url(../fonts/PFDinTextCondPro-Medium.ttf);
+    /*font-weight: bold;*/
+}
+
+
+@mixin font-normal{
+  font-family: PFDinText, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@mixin font-cond{
+  font-family: PFDinTextCond, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@mixin font-bold{
+  font-family: PFDinTextBold, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+a{
+  color: $color-link;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 0;
+  @include font-normal;
+  strong{
+    font-size: 36px;
+    font-weight: normal;
+    @include font-bold;
+  }
+}
+
+p{
+    font-size: 16.5px;
+    margin-top: 0.0em;
+    line-height: 1.2em;
+}

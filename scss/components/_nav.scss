@@ -1,0 +1,40 @@
+nav{
+  $active-margin: 10px;
+  font-size: 0;
+  font-stretch: condensed;
+  ul{
+    padding: 0;
+    margin: 20px -10px /*$active-margin*/ 0;
+    li{
+      display: inline-block;
+      list-style-type: none;
+      padding: 0;
+      position: relative;
+      /*separators*/
+      &:after{
+        content: '';
+        display: inline-block;
+        height: 1px;
+        width: 56px;
+        margin: 0 0 4px;
+        background: #c1c1c1;
+        pointer-events: none;
+      }
+      &:last-child:after{
+        display: none;
+      }
+      a{
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 24px;
+        padding: 0.2em 0.7em;
+        margin: 0;/* $active-margin;*/
+        border: 3px solid transparent;
+        @include transition( all 0.1s ease );
+        &.active, &:hover{
+          border-color: $color-yellow;
+        }
+      }
+    }
+  }
+}

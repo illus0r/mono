@@ -6,18 +6,27 @@ header{
   }
   .logo{
     padding: 12px 0 0 9px;
-    @include span-columns(5);
+    @include span-columns(6);
   }
   .phone{
     color: $color-white;
     text-align: right;
+    vertical-align: bottom;
+    padding-top: 2.8em;
     @include span-columns(6);
     @include omega();
     .phone-icon{
       background: url(../img/phone-icon.png) 0 0 no-repeat;
+      position: relative;
+      top: 3px;
+      right: 10px;
       display: inline-block;
       width: 34px;
       height: 34px;
+    }
+    .phone-number{
+      @include font-cond;
+      font-size: 38px;
     }
   }
 }

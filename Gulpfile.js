@@ -48,7 +48,7 @@ gulp.task('sass', function() {
         .pipe(sass({
           includePaths: ['styles'].concat(neat)
         }))
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("assets/css"))
         .pipe(browserSync.stream());
 });
 

@@ -11,7 +11,11 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<link type="text/css" rel="stylesheet" href="bower_components/lightslider/dist/css/lightslider.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="bower_components/lightslider/dist/js/lightslider.js"></script>
 
 </head>
 
@@ -19,64 +23,154 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo"><img src="img/logo-header.png" alt="Твоя Территория: девелоперская компания"></div>
+    <div class="logo"><img src="assets/img/logo-header.png" alt="Твоя Территория: девелоперская компания"></div>
     <div class="phone">
       <span class="phone-icon"></span>
       <span class="phone-number">+7 (8442) 98-32-84</span>
     </div>
   </div>
 </header>
-<nav>
-  <ul>
-    <li><a href="#">О компании</a></li>
-    <li><a href="#">Объекты</a></li>
-    <li><a href="#" class="active">Карьера</a></li>
-    <li><a href="#">Контакты</a></li>
-  </ul>
-</nav>
-
-<div class="slider">SLIDER</div>
-<div class="menu-banners">
-  <div class="menu-banner">
-    <img src="" alt="">
-    <div class="overlay">Объекты</div>
-    <div class="overlay">Клиенты</div>
-    <div class="overlay">Контакты</div>
+<div class="page">
+  <nav>
+    <ul>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Объекты</a></li>
+      <li><a href="#" class="active">Карьера</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  
+  <div class="slider">
+          <img src="assets/img/slider-image.png" alt="Бизнес-Центр «Балермо»">
+    <div>
+      <h2>
+        <div class="line1">
+          Бизнес-Центр
+        </div>
+        <div class="line2">
+          Балермо
+        </div>
+        <div class="line3">
+          Более <strong>5000 м2</strong>
+        </div>
+      </h2>
+      <div class="description">
+        <p>
+        Комплекс находится в Северном административном округе Москвы, в районе станции метро Сокол — одной из наиболее престижных и активно развивающихся деловых зон столицы.
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="nav-banners">
+    <div class="nav-banner">
+      <a href="#">
+        <img src="assets/img/banner-1.png" alt="Объекты">
+        <span class="overlay">
+          <span>
+            Объекты
+          </span>
+        </span>
+      </a>
+    </div>
+    <div class="nav-banner">
+      <a href="#">
+        <img src="assets/img/banner-3.png" alt="Клиенты">
+        <span class="overlay">
+          <span>
+            Клиенты
+          </span>
+        </span>
+      </a>
+    </div>
+    <div class="nav-banner">
+      <a href="#">
+        <img src="assets/img/banner-2.png" alt="Карьера">
+        <span class="overlay">
+          <span>Карьера</span>
+        </span>
+      </a>
+    </div>
+  </div>
 
-<section class="container">
-  Группа компаний «ТВОЯ ТЕРРИТОРИЯ» 
-  занимается продажей и сдачей в аренду объектов коммерческой недвижимости: офисные, торговые, складские, производственные помещения. ГК «ТВОЯ ТЕРРИТОРИЯ» имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением.
-  занимается продажей и сдачей в аренду объектов коммерческой недвижимости: офисные, торговые, складские, производственные помещения. ГК «ТВОЯ ТЕРРИТОРИЯ» имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением.  Имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением
-</section>
+  <section class="container">
+    <div class="column1">
+      <h1>Группа компаний<br /><strong>«ТВОЯ ТЕРРИТОРИЯ»</strong></h1>
+      <p>занимается продажей и сдачей в аренду объектов коммерческой недвижимости: офисные, торговые, складские, производственные помещения. ГК «ТВОЯ ТЕРРИТОРИЯ» имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением.</p>
+    </div>
+    <div class="column2">
+      <p>занимается продажей и сдачей в аренду объектов коммерческой недвижимости: офисные, торговые, складские, производственные помещения. ГК «ТВОЯ ТЕРРИТОРИЯ» имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением.  Имеет в собственности  25 тыс. кв. м коммерческой недвижимости во всех районах г. Волгограда. На сегодняшний день продажа коммерческой недвижимости является приоритетным направлением</p>
+    </div>
+  </section>
 
-<h2>Клиенты</h2>
-<div class="carousel">Карусель</div>
+  <h2>Клиенты</h2>
+
+  <div class="carousel-wrapper">
+    <ul class="carousel" class="cs-hidden">
+      <li><img src="assets/img/client1.png" alt=""></li>
+      <li><img src="assets/img/client2.png" alt=""></li>
+      <li><img src="assets/img/client3.png" alt=""></li>
+      <li><img src="assets/img/client4.png" alt=""></li>
+      <li><img src="assets/img/client5.png" alt=""></li>
+      <li><img src="assets/img/client1.png" alt=""></li>
+      <li><img src="assets/img/client2.png" alt=""></li>
+      <li><img src="assets/img/client3.png" alt=""></li>
+      <li><img src="assets/img/client4.png" alt=""></li>
+      <li><img src="assets/img/client5.png" alt=""></li>
+    </ul>
+		<div class="goToPrevSlide"></div>
+		<div class="goToNextSlide"></div>
+  </div>
+
+</div> <!--.page-->
 
 <footer>
-  <div class="left">
-    <div class="logo"></div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Объекты</a></li>
-        <li><a href="#" class="active">Карьера</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+  <div class="footer-inner">
+    <div class="column1">
+      <div class="logo"><a href="#"><img src="assets/img/logo-footer.png" alt="Твоя Территория: девелоперская компания"></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Объекты</a></li>
+          <li><a href="#" class="active">Карьера</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="copyright">© 2013 Все права защищены. «ГК Твоя Територия».</div>
     </div>
-    <div class="copyright">© 2013 Все права защищены. «ГК Твоя Територия».</div>
-  </div>
-  <div class="right">
-    <div class="contacts">
-      <div class="phone">+7 (8442) 98-32-84</div>
-      <div class="email">t_ter@mail.ru</div>
+    <div class="column2">
+      <div class="contacts">
+        <div class="phone-number">+7 (8442) 98-32-84</div>
+        <div class="email"><a href="mailto:t_ter@mail.ru">t_ter@mail.ru</a></div>
+      </div>
+      <div class="adress">Россия, г. Волгоград, ул. Кирова, 121а</div>
     </div>
-    <div class="adress">Россия, г. Волгоград, ул. Кирова, 121а</div>
   </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var carousel = $('.carousel').lightSlider({
+        autoWidth:true,
+        slideMargin: 20,
+        pager: false,
+        controls: false,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+		$('.goToPrevSlide').click(function(){
+			carousel.goToPrevSlide();	
+		});
+		$('.goToNextSlide').click(function(){
+			carousel.goToNextSlide();	
+		});
+  });
+</script>
 </body>
 
 </html>
+
+
+
+

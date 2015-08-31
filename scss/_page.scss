@@ -1,2 +1,18 @@
 body{
+  @include font-normal;
+}
+
+.page{
+  @include outer-container;
+  section{
+    @include row();
+    .column1{
+      margin-top: 0.4em;
+      @include span-columns(6);
+    }
+    .column2{
+      margin-top: 2.5em;
+      @include span-columns(6);
+    }
+  }
 }

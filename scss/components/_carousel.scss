@@ -1,0 +1,25 @@
+.carousel-wrapper{
+  position: relative;
+  @include span-columns(20 of 22);
+  @include shift(1);
+  .goToPrevSlide, .goToNextSlide {
+    position: absolute;
+    width: 24px;
+    left: -50px;
+    top: 50%;
+    height: 48px;
+    margin-top: -24px;
+    background: url(../../assets/img/carousel-prev.png) no-repeat;
+    cursor: pointer;
+    @include transition( all 0.1s );
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+  .goToNextSlide{
+    background-image: url(../../assets/img/carousel-next.png);
+    left: auto;
+    right: -50px;
+  }
+}
+
