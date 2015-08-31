@@ -26,31 +26,59 @@
 
 
 
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
-//var normalize        = require('normalize.css');
+//var gulp        = require('gulp');
+//var sass        = require('gulp-sass');
+//var neat = require('node-neat').includePaths;
+//var browserSync = require('browser-sync').create();
+
+//// Static Server + watching scss/html files
+//gulp.task('serve', ['sass'], function() {
+
+    //browserSync.init({
+        //server: ""
+    //});
+
+    //gulp.watch("scss/*.scss", ['sass']);
+    //gulp.watch("*.html").on('change', browserSync.reload);
+//});
+
+//// Compile sass into CSS & auto-inject into browsers
+//gulp.task('sass', function() {
+    //return gulp.src("scss/*.scss")
+        //.pipe(sass({
+          //includePaths: ['styles'].concat(neat)
+        //}))
+        //.pipe(gulp.dest("css"))
+        //.pipe(browserSync.stream());
+//});
+
+//gulp.task('default', ['serve']);
+
+
+
+
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 var neat = require('node-neat').includePaths;
+var browserSync = require('browser-sync');
 
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
-
-    browserSync.init({
-        server: ""
-    });
-
-    gulp.watch("scss/*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
-});
-
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("scss/*.scss")
+gulp.task('sass', function () {
+    gulp.src('scss/styles.scss')
         .pipe(sass({
           includePaths: ['styles'].concat(neat)
         }))
-        .pipe(gulp.dest("css"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['serve']);
+gulp.task('browser-sync', function() {
+    browserSync.init(["css/*.css", "js/*.js", "*.html"], {
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
+gulp.task('default', ['sass', 'browser-sync'], function () {
+    gulp.watch("scss/*.scss", ['sass']);
+});
