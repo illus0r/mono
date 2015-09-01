@@ -1,14 +1,17 @@
 @font-face {
     font-family: PFDinText;
+    src: url(../fonts/PFDinTextCondPro-Light.woff);
     src: url(../fonts/PFDinTextCondPro-Light.ttf);
 }
 @font-face {
     font-family: PFDinTextCond;
+    src: url(../fonts/PFDinTextCompPro-Light_0.woff);
     src: url(../fonts/PFDinTextCompPro-Light_0.ttf);
     /*font-stretch: condensed;*/
 }
 @font-face {
     font-family: PFDinTextBold;
+    src: url(../fonts/PFDinTextCondPro-Medium.woff);
     src: url(../fonts/PFDinTextCondPro-Medium.ttf);
     /*font-weight: bold;*/
 }
